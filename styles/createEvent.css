@@ -1,0 +1,245 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    max-width: 100%;
+}
+
+/* Head-bar */
+
+.head-bar{
+    min-width: 100%;
+    background-color: #2E3551;
+
+}
+
+.head-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.header-icon{
+    max-width: 30px;
+    max-height: 40px;
+    color: white;
+}
+
+.login-btn{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #2E3551;
+    margin-right: 25px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* Banner */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/bg-buildings.png) no-repeat center top / cover;
+    min-height: 150px;
+}
+
+.banner-text{
+    color: #2E3551;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/* form */
+.form-section{
+    min-width: 100%;
+    min-height: 800px;
+}
+
+.form-container{
+    background-color: #F7F9FC;
+    border: 10px solid #C9C9C9;
+    max-width: 826px;
+    min-height: 445px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    /* padding: 100px 150px 100px 150px; */
+}
+
+.form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    width: 60%;
+}
+
+.form-input{
+    max-width: 60%;
+    min-height: 35px;
+    margin-bottom: 35px;
+    margin-right: 30px;
+}
+
+.forgot-link{
+    margin-left: 315px;
+    margin-bottom: 35px;
+}
+ 
+/* .forgot-link a{
+    text-decoration: none;
+    color: #2E3551;
+} */
+
+.form-btn{
+    width: 136px;
+    height: 40px;
+    background-color: #1E98D7;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 315px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.description{
+    width: 450px;
+    height: 185px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-info{
+    margin-left: 270px;
+    margin-top: 200px;
+}
+
+.contact-info a{
+   text-decoration: none;
+   color:#1E98D7 ;
+}
+
+
+@media screen and (max-width: 700px) {
+    .forgot-link {
+        /* Adjust margin for smaller screens */
+        margin-left: 100px;
+    }
+
+    .form-btn {
+        /* Adjust margin for smaller screens */
+        margin-left: 100px;
+    }
+
+    .contact-info{
+        margin-left: 50px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+    }
+
+    .nav-links li{
+        margin-bottom: 12px;
+    }
+
+    .header-icon{
+        margin-top: 7px;
+    }
+
+    .description{
+        width: 250px;
+        height: 185px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    /* /////// */
+    .nav-bar{
+        display: none;
+    }
+
+    .login-btn{
+        display: none;
+    }
+
+    
+    /* Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #2E3551;
+  }
+.dropbtn img {
+    width: 30px;
+    height: 25px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: -35px;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3a415e;}
+}
+
+@media screen and (min-width: 700px){
+    .dropdown{
+        display: none;
+    }
+}
